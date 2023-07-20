@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -10,7 +11,7 @@ body {
 }
 
 .sidebar {
-  background-color: blue;
+  background-color: #C026D3;
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 1;
@@ -21,8 +22,15 @@ body {
   height: 10%;
 }
 
+.logo {
+color: white;
+  font-size: 2.5em;
+  font-weight: 550;
+}
+
 nav {
   display: grid;
+  gap: 20px;
   grid-row-start: 2;
   grid-row-end: 3;
   justify-content: space-between;
@@ -30,13 +38,24 @@ nav {
   grid-template-columns: 100%;
 }
 
-a.sidebar-link {
+.nav-icon {
+  fill: white;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+  top: 5px;
+}
 
+a.sidebar-link {
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-left: 20px;
 }
 
 
 .header {
-  background-color: pink;
+  background-color: white;
   grid-row-start: 1;
   grid-row-end: 2;
   grid-column-start: 2; 
@@ -47,10 +66,71 @@ a.sidebar-link {
 
 .search-container {
   grid-area: 1 / 1 / span 1 / span 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+
+input {
+
+  height: 2rem;
+  width: 70%;
+  border-radius:  15px;
+  border: none;
+  background-color: lightgrey;
+}
+
 
 .acct-opts-container { 
   grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.welcome-container {
+  grid-area: 2 / 1 /  span 1 / span 1;
+  font-weight: 600;
+  display: grid;
+  grid-template: 1fr / 2fr 3fr;
+  align-items: center;
+}
+
+.avatar {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.greeting {
+font-size: 2rem;
+  
+}
+
+.welcome-text {
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.welcome-name {
+font-size: 3rem;
+}
+
+.actions-container {
+ grid-area: 2 / 2 /  span 1 / span 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10%;
+}
+
+.action-button {
+background-color: #E6A8ED;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 10px;
+
 }
 
 .content {
