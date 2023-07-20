@@ -6,7 +6,7 @@ body {
 
 .container {
   display: grid;
-  grid-template: 1fr 4fr / 1fr 5fr;
+  grid-template: 1fr 6fr / 1fr 5fr;
   height: 100vh;
 }
 
@@ -61,7 +61,7 @@ a.sidebar-link {
   grid-column-start: 2; 
   grid-column-end: 3; 
   display: grid;
-  grid-template: 1fr 1fr / 3fr 2fr;
+  grid-template: 1fr 1fr / 4fr 2fr;
 }
 
 .search-container {
@@ -73,13 +73,12 @@ a.sidebar-link {
 
 
 input {
-
   height: 2.5rem;
   font-size: 2rem;
-  width: 70%;
+  width: 80%;
   border-radius:  1.25rem;
   border: none;
-  padding: 20px;
+  padding: 21px;
   background-color: lightgrey;
 }
 
@@ -103,6 +102,7 @@ input {
   grid-template: 1fr / 1fr 5fr;
   gap: 30px;
   align-items: center;
+  padding-bottom: 20px;
 }
 
 .avatar {
@@ -131,16 +131,18 @@ font-size: 3rem;
  grid-area: 2 / 2 /  span 1 / span 1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 10%;
+  gap: 15px;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .action-button {
-background-color: #E6A8ED;
+  background-color: #E6A8ED;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 25px;
   padding-right: 25px;
+  margin: 10px;
   text-decoration: none;
   color: white;
   font-size: 1.5rem;
