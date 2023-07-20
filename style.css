@@ -74,16 +74,26 @@ a.sidebar-link {
 
 input {
 
-  height: 2rem;
+  height: 2.5rem;
+  font-size: 2rem;
   width: 70%;
-  border-radius:  15px;
+  border-radius:  1.25rem;
   border: none;
+  padding: 20px;
   background-color: lightgrey;
 }
 
 
 .acct-opts-container { 
   grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.search-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin: 5px;
+  position: relative;
+  top: 5px;
 }
 
 .welcome-container {
